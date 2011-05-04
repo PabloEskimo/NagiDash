@@ -1,0 +1,40 @@
+[general]
+name = "My openFrame Project"
+heading = "This project is gonna kick ass!" 
+theme = green
+footer = "&copy; yourself  2011"
+
+[database]
+; Setup the database connection here
+; for DSN help see http://php.net/pdo
+dsn = "mysql:host=127.0.0.1;dbname=easynews"
+username = "root"
+password = ""
+
+[authentication]
+; Define the method of authentication
+; that will be used for user sessions
+; Valid: ldap | database
+required = yes
+method = database
+cookie = SecureSite
+
+[ldap]
+server = your.ldap.server.com
+username = user@your.ldap.server.com
+password = HereBeDragonsAndTheyGonnaEatYou
+base = dc=Users,dc=your,dc=ldap,dc=server,dc=com
+
+; The following pages will always be 
+; exempt from authentication
+exempt[] = "/login.php"
+exempt[] = "/install.php"
+
+[email]
+; Outgoing email settings
+smtp = 
+username = 
+password = 
+
+[debug]
+dbstats = true

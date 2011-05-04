@@ -1,0 +1,113 @@
+form
+{
+	margin: 0;
+	padding: 0;
+}
+fieldset
+{
+	border: none;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+}
+legend
+{
+	background: transparent;
+	color: #036;
+	font-size: 1.3em;
+	font-weight: bold;
+	margin: 1em 0;
+	padding: 0 .5em;
+}
+label
+{
+	float: left;
+	padding: 0 1em;
+	text-align: right;
+	width: 100px;
+}
+fieldset div
+{
+	display: block;
+	margin-bottom: .5em;
+	padding: 0;
+}
+fieldset div input,fieldset div textarea
+{
+	border-bottom: 1px solid #ccc;
+	border-left: 1px solid #555;
+	border-right: 1px solid #ccc;
+	border-top: 1px solid #555;
+	color: #333;
+	padding: 1px;
+	width: 150px;
+}
+fieldset div select
+{
+	padding: 1px;
+}
+div.fm-multi div
+{
+	margin: 5px 0;
+}
+div.fm-multi input
+{
+	width: 1em;
+}
+div.fm-multi label
+{
+	display: block;
+	padding-left: 5em;
+	text-align: left;
+	width: 200px;
+}
+#fm-submit
+{
+	clear: both;
+	padding-top: 1em;
+	text-align: left;
+}
+
+input[type="text"], input[type="password"], textarea {
+	font-family: Arial, Sans-Serif;
+	font-color: #444444;
+    font-size: 10px;
+    margin-bottom: 4px;
+    /*display: block;*/
+    padding: 0px;
+    border: solid 1px #dddddd; /* #85b1de;*/
+    width: 300px;
+}
+
+
+#fm-submit input 
+{
+	background: #555;
+	border: 1px solid #333;
+	color: #fff;
+	font-size: 85%;
+	padding: 2px 1em;
+}
+input:focus,textarea:focus
+{
+	background: #efefef;
+	color: #000;
+}
+fieldset div.fm-req
+{
+	font-weight: bold;
+}
+fieldset div.fm-req label:before
+{
+	content: "* ";
+}
+#sform
+{
+	margin: 0 auto;
+	padding: 1em;
+	text-align: left;
+	width: 350px;
+}
+p#fm-intro
+{
+	margin: 0;
+}
