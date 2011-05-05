@@ -7,7 +7,7 @@ footer = "&copy; yourself  2011"
 [database]
 ; Setup the database connection here
 ; for DSN help see http://php.net/pdo
-dsn = "mysql:host=127.0.0.1;dbname=easynews"
+dsn = "mysql:host=127.0.0.1;dbname=openFrame"
 username = "root"
 password = ""
 

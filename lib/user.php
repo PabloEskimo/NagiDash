@@ -14,8 +14,6 @@ class User extends BaseData {
 	protected $chrUsername;
 	protected $chrPassword;
 	protected $chrPhoneNumber;
-	protected $intWeekendRate;
-	protected $intWeekdayRate;
 	
 	
 	/*##########################################################################*//**

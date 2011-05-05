@@ -29,15 +29,8 @@ class Page extends Base {
 	public function __construct(  ) {
 			
 		$this->setTitle(Config::get('general:name'));
-		$this->setSubtitle(Config::get('general:heading'));
-		
-		$intCities = sizeof(City::get_all());
-		$intPlayers = sizeof(Player::get_all());
-		$intWilderness = sizeof(Wilderness::get_all());
-		$intAlliances = sizeof(Alliance::get_all());
-		
-		
-		$this->setFooter("Currently indexing $intPlayers players, $intCities cities, $intAlliances alliances & $intWilderness wildernesses");
+		$this->setSubtitle(Config::get('general:heading'));	
+		$this->setFooter(Config::get('general:footer'));
 		
 		if(strlen(Session::getUsername()) > 0){
 			

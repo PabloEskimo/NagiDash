@@ -31,10 +31,10 @@ class LDAP extends Base {
     	$this->setServer( Config::get('ldap:hostname') );
 
     	# The administrative username which will be used for searching LDAP. Must be full DN notation
-		$this->setUsernameDN( Config::get('ldap:username' );
+		$this->setUsernameDN( Config::get('ldap:username') );
 
 		# The password for the administrative username
-		$this->setPassword( Config::get('ldap:password' );
+		$this->setPassword( Config::get('ldap:password') );
 
 		# When searching the LDAP directory, use this as the top-level
 		$this->setBaseDN( Config::get('ldap:base') );

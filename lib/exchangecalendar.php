@@ -14,14 +14,12 @@ class ExchangeCalendar extends Calendar {
 	 * @return $arrAppointments;
 	 */
 	function getAppointments( $intDay, $intMonth, $intYear ) {
-
+			
 		$objHTTP = new HTTP();
 		$objHTTP->setURL($this->getURL() . "/?Cmd=contents&View=Daily&m=$intMonth&d=$intDay&y=$intYear");
 		$objHTTP->setUsername($this->getUsername());
 		$objHTTP->setPassword($this->getPassword());
 		$objHTTP->run();
-		
-		#display($objHTTP);
 		
 		if($objHTTP->getResultCode() != 200){
 			die("Failed to load Exchange calendar");
@@ -32,104 +30,8 @@ class ExchangeCalendar extends Calendar {
 		$chrPattern = '#([\w]+)-[\d]+\.EML#Um';
 		preg_match_all($chrPattern, $objHTTP->getResult(), $arrResults);
 		
-		if(strlen($arrResults[1][0]) > 0){
-			return $arrResults[1];
-		}
-		
-		$chrPattern = '#([\w]+)\.EML#Um';
-		preg_match_all($chrPattern, $objHTTP->getResult(), $arrResults);
-		
-		if(strlen($arrResults[1][0]) > 0){
-			return $arrResults[1];
-		}
-
-		return array();
+		return $arrResults[1];
 		
 	} # end method
-	
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

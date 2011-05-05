@@ -61,7 +61,7 @@ abstract class Base {
 		
 			case 'add':
 				
-				if(is_object($arrArguments[0])){
+				if(is_object($arrArguments[0]) || is_array($arrArguments[0])){
 					$chrHash = md5(encode($arrArguments[0]));
 				} else {
 					$chrHash = md5($arrArguments[0]);
@@ -150,7 +150,6 @@ abstract class Base {
 				foreach($arrPropertyPrefixes as $chrType => $chrPropertyPrefix){
 					
 					$chrTestProperty = $chrPropertyPrefix . $chrProperty;
-				
 					if(property_exists($this, $chrTestProperty)){
 						$this->$chrTestProperty = $arrArguments[0];
 						return true;
