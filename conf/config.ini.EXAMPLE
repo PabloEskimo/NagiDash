@@ -7,9 +7,13 @@ footer = "&copy; yourself  2011"
 [database]
 ; Setup the database connection here
 ; for DSN help see http://php.net/pdo
-dsn = "mysql:host=127.0.0.1;dbname=openFrame"
+dsn = "mysql:host=127.0.0.1;dbname=NagiDash"
 username = "root"
 password = ""
+
+[nagios]
+status[] = "https://nagios1.mydomain.com/status.dat"
+status[] = "https://nagios2.mydomain.com/status.dat"
 
 [authentication]
 ; Define the method of authentication
@@ -29,6 +33,7 @@ base = dc=Users,dc=your,dc=ldap,dc=server,dc=com
 ; exempt from authentication
 exempt[] = "/login.php"
 exempt[] = "/install.php"
+exempt[] = "/index.php"
 
 [email]
 ; Outgoing email settings
