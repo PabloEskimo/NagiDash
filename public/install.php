@@ -26,7 +26,6 @@ foreach($arrClassFiles as $chrClassFile) {
 	
 }
 
-
 foreach($arrDataClasses as $chrClass){
 	
 	Progress::update("Installing $chrClass to DB");

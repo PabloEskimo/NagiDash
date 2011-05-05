@@ -1,0 +1,121 @@
+*
+{
+margin: 0;
+padding: 0;
+}
+
+html, body
+{
+	height: 100%;
+	width: 100%;
+	background-color: #000;
+	color: #fff;
+	font-size: 16px;
+	font-family: "trebuchet ms", helvetica, sans-serif;
+	overflow: auto;
+	
+	
+}
+
+::-webkit-scrollbar { 
+	height: 0px; 
+	width: 0px; 
+	background-color: #FFF;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #696969;
+	-webkit-border-radius: 5px;
+	height: 50px;
+}
+
+::-webkit-scrollbar-track {	
+	background-color: inherit;
+}
+
+#large_message
+{
+	text-align: center;
+	width: 100%;
+	font-size: 36px;
+	/*color: green;*/
+}
+
+#centered
+{
+	text-align: center;
+	width: 100%;
+}
+
+#small
+{
+/*	text-align: center;*/
+	width: 100%;
+	font-size: 14px;
+}
+
+#wrapper
+{
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -4em;
+}
+
+#header
+{
+	position: relative;
+	display: block;
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+#header_right
+{
+	font-size: 36px;
+	float: right;
+}
+
+#footer 
+{
+	clear: both;
+	height: 4em;
+	width: 100%;
+	/*margin: 0px auto;
+	padding-top: 10px;*/
+	text-align: center;
+	text-transform: lowercase;
+}
+
+#underline
+{
+	border-spacing: 0;
+}
+
+#underline td
+{
+	border-bottom: 1px solid #ccc;
+}
+
+canvas
+{
+	
+}
+
+a
+{
+/*text-decoration: underline;*/
+color: #93B300;
+}
+
+img
+{
+vertical-align: text-top;
+}
+
+a:hover
+{
+text-decoration: none;
+color: #fff;
+background: #D3E378 url('/images/green/bbg1.gif') repeat-x;
+}

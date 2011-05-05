@@ -66,7 +66,7 @@ class NagiosPoller extends Base {
 		$intServers = sizeof($arrNagiosServers);
 	
 		# Removed - fills up audit table too much!
-		Audit::message("Polled $intServers servers in $intDuration seconds and found $intCount new event(s)");
+		#Audit::message("Polled $intServers servers in $intDuration seconds and found $intCount new event(s)");
 		
 		return true;
 			

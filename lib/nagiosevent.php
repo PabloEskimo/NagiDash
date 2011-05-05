@@ -89,8 +89,13 @@ class NagiosEvent extends BaseData {
 	 * @return $blnRecovered
 	 */
 	public function hasRecovered(  ) {
-				
+
 		if($this->isRecovered()){
+			return true;
+		}
+	
+		$arrBlacklist = Config::get('nagios:blacklist');
+		if(in_array("{$this->getHost()}:{$this->getNagiosHost()}", $arrBlacklist)){
 			return true;
 		}
 		
